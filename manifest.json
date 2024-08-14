@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Blur Extension",
+  "version": "1.0",
+  "description": "Draw blurred areas on the screen for privacy during recordings",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; font-src https://fonts.gstatic.com;"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

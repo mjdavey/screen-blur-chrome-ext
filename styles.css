@@ -1,0 +1,85 @@
+body {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mode-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mode-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  color: #fff;
+}
+
+.mode-button .icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.mode-button .label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mode-button .description {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-left: auto;
+}
+
+.off-mode {
+  background-color: #6c757d;
+}
+
+.on-mode {
+  background-color: #28a745;
+}
+
+.edit-mode {
+  background-color: #007bff;
+}
+
+.mode-button:hover {
+  filter: brightness(110%);
+}
+
+.mode-button.active {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.status-message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #dc3545;
+  text-align: center;
+}
